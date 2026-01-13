@@ -1,86 +1,101 @@
-/* --- Page background like the example --- */
+/* ===============================
+   Global Page Styling
+   =============================== */
 body {
   margin: 0;
-  background: #f3f0d6; /* beige */
+  background: #eef6fb; /* light blue background */
   font-family: Verdana, Arial, Helvetica, sans-serif;
   color: #333;
 }
 
-/* --- Center white "page" --- */
+/* ===============================
+   Main White Page Container
+   =============================== */
 .wrapper {
   max-width: 980px;
   margin: 30px auto;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #ddd;
   box-shadow: 0 8px 18px rgba(0,0,0,0.08);
   position: relative;
 }
 
-/* Teal side edges like the example */
+/* Light blue side accents (like example) */
 .wrapper::before,
 .wrapper::after {
   content: "";
   position: absolute;
-  top: 80px;           /* starts under the header */
+  top: 80px;
   bottom: 0;
   width: 10px;
-  background: #2297a6; /* teal */
+  background: #9ccfe8; /* light blue */
 }
 .wrapper::before { left: 0; }
 .wrapper::after  { right: 0; }
 
-/* --- Top header bar (pink + teal/yellow borders) --- */
+/* ===============================
+   Header + Navigation
+   =============================== */
 .header {
   text-align: center;
-  background: #ff8080;          /* pink/coral */
-  border-top: 10px solid #2297a6;
-  border-bottom: 10px solid #f9e9a1; /* yellow */
+  background: #f6b6c9;          /* soft pink */
+  border-top: 10px solid #9ccfe8;
+  border-bottom: 10px solid #dbeffc;
   padding: 18px 10px;
 }
 
-/* Nav buttons */
+/* Navigation buttons */
 .header a.button {
   display: inline-block;
   margin: 6px 10px;
-  padding: 8px 12px;
-  background: #eafcff; /* light/azure */
-  color: #111;
+  padding: 8px 14px;
+  background: #e8f3fb; /* light blue */
+  color: #234;
   text-decoration: none;
-  border: 1px solid #bdbdbd;
+  border: 1px solid #b6d6ea;
   border-radius: 8px;
   font-weight: 700;
 }
 
 .header a.button:hover {
+  background: #d6ebf8;
   transform: translateY(-1px);
   box-shadow: 0 6px 10px rgba(0,0,0,0.10);
 }
 
-/* --- Main content area --- */
+/* ===============================
+   Content Area
+   =============================== */
 .content {
   padding: 26px 36px 34px 36px;
 }
 
+/* Main page title */
 .section-title {
   margin: 0 0 10px 0;
-  color: #6b89bf; /* blue-ish like example headings */
+  color: #4a8fbf; /* blue heading */
   font-size: 26px;
 }
 
+/* Sub-headings */
 h2 {
-  color: #6b89bf;
+  color: #4a8fbf;
   margin-top: 22px;
   margin-bottom: 10px;
 }
 
-p { line-height: 1.6; }
+p {
+  line-height: 1.6;
+}
 
 ul {
   padding-left: 20px;
   line-height: 1.6;
 }
 
-/* Two-column header area: text + "profile" */
+/* ===============================
+   About Page Layout
+   =============================== */
 .top-grid {
   display: grid;
   grid-template-columns: 1fr 190px;
@@ -88,6 +103,7 @@ ul {
   align-items: start;
 }
 
+/* Profile box */
 .profile {
   border: 2px solid #e7e7e7;
   border-radius: 10px;
@@ -96,11 +112,12 @@ ul {
   background: #fbfbfb;
 }
 
+/* Circular initials avatar */
 .avatar {
   width: 120px;
   height: 120px;
   border-radius: 999px;
-  background: #2297a6;
+  background: #9ccfe8;
   margin: 0 auto 10px auto;
   display: grid;
   place-items: center;
@@ -109,7 +126,7 @@ ul {
   font-size: 34px;
 }
 
-/* Small helper chips */
+/* Skill chips */
 .chip {
   display: inline-block;
   background: #f1f6ff;
@@ -120,7 +137,9 @@ ul {
   font-size: 13px;
 }
 
-/* Footer */
+/* ===============================
+   Footer
+   =============================== */
 .footer {
   border-top: 1px solid #eee;
   padding: 10px 18px;
@@ -128,10 +147,26 @@ ul {
   color: #666;
 }
 
-/* Mobile responsiveness */
+/* ===============================
+   Responsive (Mobile)
+   =============================== */
 @media (max-width: 820px) {
-  .wrapper { margin: 0; border: none; border-radius: 0; }
-  .wrapper::before, .wrapper::after { display: none; }
-  .content { padding: 18px; }
-  .top-grid { grid-template-columns: 1fr; }
+  .wrapper {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+  }
+
+  .wrapper::before,
+  .wrapper::after {
+    display: none;
+  }
+
+  .content {
+    padding: 18px;
+  }
+
+  .top-grid {
+    grid-template-columns: 1fr;
+  }
 }
