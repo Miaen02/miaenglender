@@ -120,13 +120,13 @@ ul { padding-left: 20px; line-height: 1.65; }
 
 /* Profile photo frame */
 .avatar-frame {
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   border-radius: 999px;
   background: #ffffff;
-  border: 3px solid #6fa3c8; /* muted blue */
-  padding: 8px;
-  margin: 0 auto 12px auto;
+  border: 3px solid #6fa3c8;
+  padding: 10px;              
+  margin: 0 auto 14px auto;
   box-sizing: border-box;
   overflow: hidden;
 }
