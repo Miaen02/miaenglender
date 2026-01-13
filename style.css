@@ -112,18 +112,15 @@ ul {
   background: #fbfbfb;
 }
 
-/* Circular initials avatar */
+/* Profile photo */
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 999px;
-  background: #9ccfe8;
-  margin: 0 auto 10px auto;
-  display: grid;
-  place-items: center;
-  color: white;
-  font-weight: 800;
-  font-size: 34px;
+  object-fit: cover;
+  border: 3px solid #9ccfe8;
+  margin: 0 auto 12px auto;
+  display: block;
 }
 
 /* Skill chips */
