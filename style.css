@@ -92,6 +92,20 @@ ul {
   padding-left: 20px;
   line-height: 1.6;
 }
+.contact-line {
+  margin: 6px 0 14px 0;
+  color: #444;
+}
+
+.contact-line a {
+  color: #2c6f9a;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact-line a:hover {
+  text-decoration: underline;
+}
 
 /* ===============================
    About Page Layout
