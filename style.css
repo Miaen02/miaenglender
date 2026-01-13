@@ -38,8 +38,8 @@ body {
 /* Header */
 .header {
   text-align: center;
-  background: #1f2a44;              /* navy */
-  border-top: 10px solid #6fa3c8;   /* muted blue */
+  background: 	#92bbff;              /* blue */
+  border-top: 10px solid #e8bcf0;   /* purple */
   border-bottom: 10px solid #e7f0f7;/* very light blue */
   padding: 18px 10px;
 }
